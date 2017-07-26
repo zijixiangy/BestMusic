@@ -27,7 +27,7 @@ import loaddata.bestmusic.ui.adapter.MusiclistAdapter;
 /**
  * Created by svmsung on 2017-07-24.
  */
-
+//新分支才有这行......
 public class MusicListFragment extends Fragment {
     @BindView(R.id.fg_musiclist_bd)
     ImageView fgMusiclistBd;
