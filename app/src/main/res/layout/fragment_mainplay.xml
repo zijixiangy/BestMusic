@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/fragment_music_play_headimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/fragment_music_play_musicname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/fragment_music_play_headimage"
+        android:text="歌名"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_music_play_musicname"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/fragment_music_play_headimage"
+        android:text="歌手"
+        android:id="@+id/fragment_music_play_musicartist"/>
+
+    <ImageView
+        android:id="@+id/fragment_music_nextplayimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/next" />
+
+    <ImageView
+        android:id="@+id/fragment_music_playimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@id/fragment_music_nextplayimage"
+        android:src="@mipmap/zantin" />
+</RelativeLayout>

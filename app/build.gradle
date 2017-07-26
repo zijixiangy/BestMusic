@@ -1,12 +1,14 @@
 apply plugin: 'com.android.application'
+//添加如下代码，应用apt插件 Dagger2框架
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 24
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "loaddata.bestmusic"
-        minSdkVersion 18
-        targetSdkVersion 26
+        minSdkVersion 21
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -24,6 +26,23 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
+    //初始化布局butterknife绑定框架
+    compile'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //初始化组件的框架
+
+    //java注解 Dagger2框架
+    compile 'com.google.dagger:dagger:2.4'
+    apt 'com.google.dagger:dagger-compiler:2.4'
+    //android.support.design.widget.NavigationView侧滑选项的组件
+    compile 'com.android.support:design:24.2.1'
+
+    compile 'org.glassfish:javax.annotation:10.0-b28'
+
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+
+
+
 }
